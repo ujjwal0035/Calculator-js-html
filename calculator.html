@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculatornight.css"/>
+    <!-- <link rel="stylesheet" href="./calculatorday.css"/> -->
+    <script src="./calculator.js"></script>
+    <link rel="stylesheet" href="../All Library/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="Screen-container">
+            <div class="background-switch">
+                <i id="day" class="fa fa-sun-o icon " onclick="dayTheme()" aria-hidden="true"></i>
+                <i id="night" class="fa fa-moon-o icon " onclick="nightTheme()" aria-hidden="true"></i>
+            </div>
+            <div class="main-screen-container">
+                <label id="primaryScreen" class="primary-screen"></label>
+                <label id="secondry-screen">0</label>
+            </div>
+        </div>
+        <div class="keypad-container">
+            <table class="keypad">
+                <tbody>
+                  <tr>
+                    <td><div class="key action-keys" onclick="resetKeyClickHandler()">AC</div></td>
+                    <td><div class="key action-keys" onclick="numKeyClickHandler('(')">(</div></td>
+                    <td><div class="key action-keys" onclick="numKeyClickHandler(')')">)</div></td>
+                    <td><div class="key operand" onclick="numKeyClickHandler('/')">÷</div></td>
+                  </tr>
+                  <tr>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('7')" >7</div></td>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('8')">8</div></td>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('9')">9</div></td>
+                      <td><div class="key operand" onclick="numKeyClickHandler('*')">x</div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('4')">4</div></td>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('5')">5</div></td>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('6')">6</div></td>
+                      <td><div class="key operand" onclick="numKeyClickHandler('-')">-</div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('1')">1</div></td>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('2')">2</div></td>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('3')">3</div></td>
+                      <td><div class="key operand" onclick="numKeyClickHandler('+')">+</div></td>
+                    </tr>
+                    <tr>  
+                      <td><div class="key num-keys" onclick="undoClickHandler()" ><i class="fa fa-repeat flip-180" aria-hidden="true"></i></div></td>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('0')">0</div></td>
+                      <td><div class="key num-keys" onclick="numKeyClickHandler('.')">.</div></td>
+                      <td><div class="key operand" onclick="resultClickHandler()">=</div></td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</body>
+</html>

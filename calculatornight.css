@@ -1,0 +1,108 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.calculator-container{
+    border-radius: 24px;
+    height: 550px;
+    min-height: 550px;
+    width: 300px;
+    min-width: 300px;
+    background-color: rgb(10, 9, 9);
+    overflow: hidden;
+}
+.Screen-container{
+    height: 40%;
+    
+}
+.keypad-container{
+    height: 60%;
+    border-radius: 24px;
+    background-color: rgb(34, 30, 30);
+    
+
+}
+#secondry-screen{
+    color: white;
+    font-size: 50px;
+}
+.icon{
+    font-size: large;
+    color: rgb(247, 239, 239);
+    padding: 8px;
+}
+
+.background-switch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: rgb(34, 30, 30);
+    margin-left: 112px;
+    margin-right: 112px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+}
+#day{
+    color: rgb(151, 141, 141);
+    
+}
+.primary-screen{
+    color: rgb(247, 242, 242);
+    padding: 4px;
+    font-size: 20px;
+}
+.secondry-screen{
+    color: rgb(247, 242, 242);
+    padding: 4px;
+    font-size: 9vh;
+}
+.oprands{
+    margin-left: 4px;
+    margin-right: 4px;
+    color: rgb(212, 100, 100);
+}
+.main-screen-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 68%;
+    justify-content: flex-end;
+    padding-right: 16px;
+}
+.action-keys{
+    color: rgb(55, 216, 189);
+}
+.operand{
+    color:  rgb(212, 100, 100);
+}
+.flip-180{
+    transform: rotateY(180deg);
+}
+.keypad-container{
+    color: rgb(245, 248, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.keypad{
+    width: 96%;
+    border-spacing: 16px;
+}
+.key{
+    display: flex;
+    background-color: rgb(10, 9, 9);
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
